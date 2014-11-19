@@ -1,0 +1,15 @@
+<!DOCTYPE.html><html>
+<head>
+  <title> Slacker News</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <h1>Existing News</h1>
+  <a href="/articles/new"> New Article </a>
+    <% @csv.each do |article| %>
+      <h2><%=article[0]%> </h2>
+      <p><a href="<%=article[1]%>" target="_blank">Read here</a></p>
+      <p>Description: <%=article[2]%></p>
+    <%end%>
+</body>
+</html>
