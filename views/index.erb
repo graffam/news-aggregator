@@ -1,10 +1,13 @@
 <!DOCTYPE.html><html>
 <head>
   <title> Slacker News</title>
-  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="home.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div class="header">
   <h1>Existing News</h1>
+</div>
   <a href="/articles/new"> New Article </a>
     <% @csv.each do |article| %>
       <h2><%=article[0]%> </h2>
